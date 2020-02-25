@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 require('dotenv').config();
-const scrollPageToBottom = require("puppeteer-autoscroll-down")
+
 //Variables
 const user = process.env.USER_EMAIL;
 const pass = process.env.USER_PASS;
@@ -39,7 +39,7 @@ const search = process.env.SEARCH_VAL;
 //[aria-labelledby="accessible-list-10"] > .css-1dbjc4n > div > div > div
   // await page.click('article',{button: 'middle',clickCount:2, delay: 100}); //Click tweet
 
-  const pages = [0,1,2,3,4];
+  const pages = ['0','1','2','3','4','5','6','7','8','9','10','11'];
   for (const iterator of pages) {
     await page.waitForSelector('article',{timeout:60000}); //Esperar a que carguen articulos
     
@@ -57,8 +57,8 @@ const search = process.env.SEARCH_VAL;
       window.scrollBy(0, 5*window.innerHeight); //Hacer Scroll hacia abajo para cargar más tweets
     });
 
-    await page.waitFor(20000); //Esperar a que carguen los tweets
-    await page.screenshot({ path: `./screenshots/search${iterator.toString}.png`});//Resultados
+    await page.waitFor(12000); //Esperar a que carguen los tweets
+    await page.screenshot({ path: `./screenshots/search${iterator}.png`});//Resultados
   }
 
   
