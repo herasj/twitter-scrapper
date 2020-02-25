@@ -20,6 +20,7 @@
   "homepage": "https://github.com/herasj/twitter-scrapper#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^2.1.1",
+    "puppeteer-autoscroll-down": "^0.1.2"
   }
 }
