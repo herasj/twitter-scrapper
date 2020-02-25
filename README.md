@@ -1,17 +1,16 @@
 # twitter-scrapper (WIP)
 
 ### Los datos importantes se almacenan en un .env
+> USER_EMAIL
 
- > USER_EMAIL
+> USER_PASS
 
- > USER_PASS
+> SEARCH_VAL
 
- > SEARCH_VAL
+## Iniciar Scrapper
 
- ## Iniciar Scrapper
+> node app.js
 
- > node app.js
+**ó**
 
- ó
- 
- > npm start
+> npm start
