@@ -29,14 +29,17 @@ const pass = process.env.USER_PASS;
   await page.screenshot({ path: './screenshots/home.png', fullPage: 'true' });//Home SS
 
   await page.keyboard.press('Enter',{ waitUntil: 'networkidle2' }); //Search 
-  
-  await page.waitForNavigation();
 
-  await page.waitFor('[class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0"]'); //Waait
+  await page.waitForSelector('#tweet-text'); //Waait
+  await page.screenshot({ path: './screenshots/search.png'});//Search results
 
-  await page.screenshot({ path: './screenshots/search.png', fullPage: 'true' });//Search results
+  await page.click('#tweet-text'); //Click tweet
+  await page.screenshot({ path: './screenshots/tweet.png'});
 
-  const divsCounts = await page.$$eval('span', spans => console.dir(spans));
+  const element = await page.$('[class="css-1dbjc4n r-1igl3o0 r-qklmqi r-1adg3ll"]');
+  const text = await page.evaluate(element => element, element); //.textContent
+  console.log(text);
 
   await browser.close(); //Close Chromium 
 })();
+
