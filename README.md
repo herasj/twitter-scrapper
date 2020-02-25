@@ -2,8 +2,16 @@
 
 ### Los datos importantes se almacenan en un .env
 
- >USER_EMAIL
+ > USER_EMAIL
 
- >USER_PASS
+ > USER_PASS
 
- >SEARCH_VAL
+ > SEARCH_VAL
+
+ ## Iniciar Scrapper
+
+ > node app.js
+
+ ó
+ 
+ > npm start
