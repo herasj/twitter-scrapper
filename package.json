@@ -1,0 +1,25 @@
+{
+  "name": "twitter-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herasj/twitter-scrapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herasj/twitter-scrapper/issues"
+  },
+  "homepage": "https://github.com/herasj/twitter-scrapper#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "puppeteer": "^2.1.1"
+  }
+}
