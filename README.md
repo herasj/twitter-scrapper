@@ -7,6 +7,8 @@
 
 > SEARCH_VAL
 
+> TARGET
+
 ## Iniciar Scrapper
 
 > node app.js
@@ -14,3 +16,7 @@
 **ó**
 
 > npm start
+
+## Spamear al objetivo
+
+> node write.js
