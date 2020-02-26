@@ -6,7 +6,7 @@ const user = process.env.USER_EMAIL;
 const pass = process.env.USER_PASS;
 const target = process.env.TARGET;
 
-var msg = new Array(1);
+var msg = new Array(150);
 for (let index = 0; index < msg.length; index++) {
     msg[index]=(target+' '+ randomSentence().toString());
 }
