@@ -4,9 +4,11 @@ require('dotenv').config();
 
 const user = process.env.USER_EMAIL;
 const pass = process.env.USER_PASS;
+const target = process.env.TARGET;
+
 var msg = new Array(1);
 for (let index = 0; index < msg.length; index++) {
-    msg[index]=('@Wilkingpa '+ randomSentence().toString());
+    msg[index]=(target+' '+ randomSentence().toString());
 }
 console.table(msg);
 (async() => {
