@@ -17,6 +17,6 @@
 
 > npm start
 
-## Spamear al objetivo
+## Enviar mensajes al objetivo
 
 > node write.js
